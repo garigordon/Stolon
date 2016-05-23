@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/master.min.css">
+
+   <!-- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+-->
+    <!--[if lt IE 9]>
+    <script src="js/fallback/html5shiv.js"></script>
+    <script src="js/fallback/respond.min.js"></script>
+    <script src="js/fallback/es5-shim.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="adaptive">
+
+<div class="b-page">
+
+    <header class="b-header">
+        <div class="b-header__container">
+
+            <a class="b-header__menu-mobile" data-menu-mobile-btn></a>
+
+            <a class="b-header__logo"></a>
+
+            <div class="b-header__select-city">
+                <select data-select data-theme="theme-header">
+                    <option value="0">Санкт-Петербург</option>
+                    <option value="1">Москва</option>
+                    <option value="2">Екатеринбург</option>
+                    <option value="3">Новосибирск</option>
+                    <option value="4">Краснодар</option>
+                </select>
+            </div>
+
+            <div class="b-header__user-nav">
+                <ul class="i-list">
+                    <li class="i-list__item">
+                        <a href="#link" class="i-list__link">
+                            <span class="i-list__link-underline">О проекте</span>
+                        </a>
+                    </li>
+                    <li class="i-list__item">
+                        <a href="#link" class="i-list__link">
+                            <span class="i-list__link-underline">Полезное</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="b-header__user-panel">
+
+                <a class="b-header__btn b-header__btn--restorator" data-modal >Рестораторам</a>
+
+                <div class="b-header__user-menu-holder">
+                    <a class="b-header__btn b-header__btn--user" data-btn-user>
+                        <div class="user__tmb">
+                            <img src="img/tmp/header-user-avatar.jpg" alt=""/>
+                        </div>
+                        <div class="user__title">
+                            Konstantin_89
+                        </div>
+                    </a>
+                    <ul class="b-header__user-menu i-list">
+                        <li class="i-list__item"><a class="i-list__link" href="#link">Личный кабинет</a></li>
+                        <li class="i-list__item"><a class="i-list__link" href="#link">Выйти</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div><!-- /.b-header__container -->
+    </header><!-- /.b-header -->
+
+    <ul class="b-user-menu-mobile i-list">
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Текущий заказ</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Избранное</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Архив заказов</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Профиль</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Выйти</a>
+        </li>
+    </ul>
+
+    <div class="modals-layout">
+    	<div class="b-modal registr b-modal--big">
+			<div class="tab-blocks">
+	    		<ul class="tabsli">
+	    			<li class="b1 tab-current"><a href="#">Город</a></li>
+	    			<li class="b2"><a href="#">Область</a></li>
+	    			<li class="b2"><a href="#">Карта</a></li>
+	    		</ul>
+	    		<a class="b-modal__close"></a>
+	    	</div>
+            <div class="b-modal__wrapper">
+            	<div class="tab-box b1">
+            		<div class="b-modal__form">
+	            		<div class="form__cols">	
+	            			<div class="line">
+		            			<h2>Санкт-Петербург</h2>
+		            		</div>
+		            		<div class="line">
+		            			<input type="text" value="" />
+		            			<input type="submit" class="btn-submit sub-reg-1" value="ПОДТВЕРДИТЬ" />
+		            		</div>
+		            		<div class="line">
+		            			<p class="smaller">В списке отображены самые популярные города, если вы не видете в списке свой город, или он входит в область, <br/> но вы хотите выбрать именно свой город, введите его название в поисковой строке.</p>
+		            		</div>
+		            		<div class="citys">
+		            			<div class="city-list">
+		            				<ul>
+		            					<li><a href="#">Москва</a></li>
+		            					<li><a href="#">Санкт-Петербург</a></li>
+		            					<li><a href="#">Абакан</a></li>
+		            					<li><a href="#">Архангельск</a></li>
+		            					<li><a href="#">Астрахань</a></li>
+		            					<li><a href="#">Барнаул</a></li>
+		            					<li><a href="#">Белгород</a></li>
+		            					<li><a href="#">Биробиджан</a></li>
+		            					<li><a href="#">Благовещенск</a></li>
+		            				</ul>
+		            			</div>
+		            			<div class="city-list">
+		            				<ul>
+		            					<li><a href="#">Москва</a></li>
+		            					<li><a href="#">Санкт-Петербург</a></li>
+		            					<li><a href="#">Абакан</a></li>
+		            					<li><a href="#">Архангельск</a></li>
+		            					<li><a href="#">Астрахань</a></li>
+		            					<li><a href="#">Барнаул</a></li>
+		            					<li><a href="#">Белгород</a></li>
+		            					<li><a href="#">Биробиджан</a></li>
+		            					<li><a href="#">Благовещенск</a></li>
+		            				</ul>
+		            			</div>
+		            			<div class="city-list">
+		            				<ul>
+		            					<li><a href="#">Москва</a></li>
+		            					<li><a href="#">Санкт-Петербург</a></li>
+		            					<li><a href="#">Абакан</a></li>
+		            					<li><a href="#">Архангельск</a></li>
+		            					<li><a href="#">Астрахань</a></li>
+		            					<li><a href="#">Барнаул</a></li>
+		            					<li><a href="#">Белгород</a></li>
+		            					<li><a href="#">Биробиджан</a></li>
+		            					<li><a href="#">Благовещенск</a></li>
+		            				</ul>
+		            			</div>
+		            			<div class="city-list">
+		            				<ul>
+		            					<li><a href="#">Москва</a></li>
+		            					<li><a href="#">Санкт-Петербург</a></li>
+		            					<li><a href="#">Абакан</a></li>
+		            					<li><a href="#">Архангельск</a></li>
+		            					<li><a href="#">Астрахань</a></li>
+		            					<li><a href="#">Барнаул</a></li>
+		            					<li><a href="#">Белгород</a></li>
+		            					<li><a href="#">Биробиджан</a></li>
+		            					<li><a href="#">Благовещенск</a></li>
+		            				</ul>
+		            			</div>
+	            			</div>
+	            		</div>
+	            	</div>	
+            	</div>
+            	<div class="tab-box b2">
+            		<div class="map-modal">
+            			<div class="textandshadow">
+            				<h3>Санкт-Петербург</h3>
+            				<p>Вознесенский переулок, 8/5с2</p>
+            			</div>
+			            <div class="client-form__map client-map">
+                        <div id="map-holder" class="client-map__holder"></div>
+                          <div class="client-map__marker"></div>
+                          
+				            <div class="b-modal__form">
+				            <a href="#" class="btn-submit sub-reg-1">ПОДТВЕРДИТЬ</a>
+				            </div>
+                        </div>
+                    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                    <script>
+                      ymaps.ready(function () {
+                        var myMap = new ymaps.Map('map-holder', {
+                            center: [55.500000, 37.60000],
+                            zoom: 15,
+                            controls: []
+                        });
+                        //myMap.controls.add('smallZoomControl', { top: 70, right: 5 });
+                        var zoomControl = new ymaps.control.ZoomControl({
+                            options: {
+                                size: "small",
+                                position: { top: 20, left: 20 }
+                            }
+                        });
+                        myMap.controls.add(zoomControl);
+                        myMap.geoObjects.add(myPlacemark);
+                        myMap.behaviors.disable(['drag', 'rightMouseButtonMagnifier', 'scrollZoom']);
+                      });
+                    </script>
+			        </div>
+            	</div>
+            	<div class="tab-box b3">
+            		3
+            	</div>
+            </div>
+        </div>
+        
+        
+		<div class="b-modal registr b-modal--big">
+			<a class="b-modal__close"></a>
+            <div class="b-modal__wrapper b-modal__form">
+            	<div class="title-form">
+            		<h2>Резерв столика в ресторан “Белый”</h2>
+            		<span class="gree">Москва, ул. Арбат, 55/32</span>
+            	</div>
+            	<div class="b-reserve__container margin-three">
+	                <div class="b-reserve__options">
+	                    
+	                    <div class="item">
+
+	                        <label>Дата</label>
+
+	                        <div class="input-holder date">
+	                            <input type="text" data-mask="99.99.2014" value="12.10.2014" id="mail_aut">
+	                            <div style="display: none" class="tooltip-box" id="error-tab">
+	                            	<div class="arow"></div>
+	                            	<p>Введеный e-mail содержит не допостимые <br> символы. Проверьте правильность <br> введенного адреса</p>
+	                            	<div class="close-tooltip">
+	                            		<a href="javascript:void(0);">Закрыть</a>
+	                            	</div>
+	                            </div>
+	                        </div>
+	                        
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Время</label>
+
+	                        <div class="input-holder time">
+	                            <input type="text" value="19:30" data-mask="99:99">
+	                        </div>
+
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Гости</label>
+
+	                        <div class="input-holder guests">
+	                            <input type="text" value="2" maxlength="3">
+	                        </div>
+
+	                    </div>
+	                    
+	                </div>
+
+	                <div class="b-reserve__checklist">
+
+	                    <label class="title hidden-xs hidden-xs">Пожелания</label>
+
+	                    <div class="item">
+	                        <label for="checke1"><input type="checkbox" id="checke1" name="checke1"><span>У окна</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke2"><input type="checkbox" id="checke2" name="checke2"><span>Тихий</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke3"><input type="checkbox" id="checke3" name="checke3"><span>VIP</span></label>
+	                    </div>
+
+	                </div>
+	            </div>
+	            <div class="b-modal__form">
+	            	<div class="thanks txt-mars">
+	            		<p>Закажите бдюда заранее и вам не понадобится тратить</p>
+	            		<p>время ожидание.</p>
+	            		<p><a href="#">Пропустить и прейти к подтверждению</a></p>
+	            	</div>
+	            </div>
+	            <div class="title-step show-xs">Осталось всего два шага</div>
+	            <div class="step-box">
+	            	
+	            	<div class="step">
+	            		<span class="oval">1</span>
+	            		<strong class="hidden-xs hidden-sm">Параметры бронирования</strong>
+	            	</div>
+	            	<div class="step active">
+	            		<span class="oval">2</span>
+	            		<strong class="hidden-xs hidden-sm">Выбор меню</strong>
+	            	</div>
+	            	<div class="step">
+	            		<span class="oval">3</span>
+	            		<strong class="hidden-xs hidden-sm">Подтверждение и оплата</strong>
+	            	</div>
+	            </div>
+	            <div class="form__field submit">
+                    <a class="btn-submit sub-reg-1">Добавить блюдо</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+		<div class="b-modal registr b-modal--big">
+			<a class="b-modal__close"></a>
+            <div class="b-modal__wrapper b-modal__form">
+            	<div class="title-form">
+            		<h2>Резерв столика в ресторан “Белый”</h2>
+            		<span class="gree">Москва, ул. Арбат, 55/32</span>
+            	</div>
+            	<div class="b-reserve__container margin-three">
+	                <div class="b-reserve__options">
+	                    
+	                    <div class="item">
+
+	                        <label>Дата</label>
+
+	                        <div class="input-holder date">
+	                            <input type="text" data-mask="99.99.2014" value="12.10.2014" id="mail_aut">
+	                            <div style="display: none" class="tooltip-box" id="error-tab">
+	                            	<div class="arow"></div>
+	                            	<p>Введеный e-mail содержит не допостимые <br> символы. Проверьте правильность <br> введенного адреса</p>
+	                            	<div class="close-tooltip">
+	                            		<a href="javascript:void(0);">Закрыть</a>
+	                            	</div>
+	                            </div>
+	                        </div>
+	                        
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Время</label>
+
+	                        <div class="input-holder time">
+	                            <input type="text" value="19:30" data-mask="99:99">
+	                        </div>
+
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Гости</label>
+
+	                        <div class="input-holder guests">
+	                            <input type="text" value="2" maxlength="3">
+	                        </div>
+
+	                    </div>
+	                    
+	                </div>
+
+	                <div class="b-reserve__checklist">
+
+	                    <label class="title hidden-xs hidden-xs">Пожелания</label>
+
+	                    <div class="item">
+	                        <label for="checke1"><input type="checkbox" id="checke1" name="checke1"><span>У окна</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke2"><input type="checkbox" id="checke2" name="checke2"><span>Тихий</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke3"><input type="checkbox" id="checke3" name="checke3"><span>VIP</span></label>
+	                    </div>
+
+	                </div>
+	            </div>
+	            <div class="b-modal__form">
+	            	<div class="table-box b-order-menu">
+		            	<table>
+		            		<tr>
+		            			<th>Наименование</th>
+		            			<th>Кол-во</th>
+		            			<th class="hidden-xs">Цена</th>
+		            			<th>Итого:</th>
+		            			<th></th>
+		            		</tr>
+		            		<tr class="color">
+		            			<td>Миту сет</td>
+		            			<td>
+		            				<div class="item__val">
+			                            <input type="text" value="0">
+			                            <a class="minus"></a>
+			                            <a class="plus"></a>
+			                        </div>
+		            			</td>
+		            			<td class="hidden-xs">689 руб.</td>
+		            			<td>689 руб.</td>
+		            			<td><a href="#"><i class="icon-remove"></i></a></td>
+		            		</tr>
+		            		<tr>
+		            			<td>Миту сет</td>
+		            			<td>
+		            				<div class="item__val">
+			                            <input type="text" value="1">
+			                            <a class="minus"></a>
+			                            <a class="plus"></a>
+			                        </div>
+		            			</td>
+		            			<td class="hidden-xs">689 руб.</td>
+		            			<td>689 руб.</td>
+		            			<td><a href="#"><i class="icon-remove"></i></a></td>
+		            		</tr>
+		            		<tr class="color">
+		            			<td>Миту сет</td>
+		            			<td>
+		            				<div class="item__val">
+			                            <input type="text" value="1">
+			                            <a class="minus"></a>
+			                            <a class="plus"></a>
+			                        </div>
+		            			</td>
+		            			<td class="hidden-xs">689 руб.</td>
+		            			<td>689 руб.</td>
+		            			<td><a href="#"><i class="icon-remove"></i></a></td>
+		            		</tr>
+		            		<tr>
+		            			<td>Миту сет</td>
+		            			<td>
+		            				<div class="item__val">
+			                            <input type="text" value="1">
+			                            <a class="minus"></a>
+			                            <a class="plus"></a>
+			                        </div>
+		            			</td>
+		            			<td class="hidden-xs">689 руб.</td>
+		            			<td>689 руб.</td>
+		            			<td><a href="#"><i class="icon-remove"></i></a></td>
+		            		</tr>
+		            		<tr class="color">
+		            			<td>Миту сет</td>
+		            			<td>
+		            				<div class="item__val">
+			                            <input type="text" value="1">
+			                            <a class="minus"></a>
+			                            <a class="plus"></a>
+			                        </div>
+		            			</td>
+		            			<td class="hidden-xs">689 руб.</td>
+		            			<td>689 руб.</td>
+		            			<td><a href="#"><i class="icon-remove"></i></a></td>
+		            		</tr>
+		            	</table>
+	            	</div>
+	            </div>
+	            <div class="title-step show-xs">Осталось всего два шага</div>
+	            <div class="step-box">
+	            	
+	            	<div class="step">
+	            		<span class="oval">1</span>
+	            		<strong class="hidden-xs hidden-sm">Параметры бронирования</strong>
+	            	</div>
+	            	<div class="step active">
+	            		<span class="oval">2</span>
+	            		<strong class="hidden-xs hidden-sm">Выбор меню</strong>
+	            	</div>
+	            	<div class="step">
+	            		<span class="oval">3</span>
+	            		<strong class="hidden-xs hidden-sm">Подтверждение и оплата</strong>
+	            	</div>
+	            </div>
+	            <div class="form__field submit">
+	            	<div class="buttons-box">
+	                    <a class="btn-submit sub-reg-2">ДОБАВИТЬ БЛЮДО</a>
+	                    <a class="btn-submit sub-reg-1">ПРОДОЛЖИТЬ</a>
+	                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+		<div class="b-modal registr b-modal--big">
+			<a class="b-modal__close"></a>
+            <div class="b-modal__wrapper b-modal__form">
+            	<div class="title-form">
+            		<h2>Резерв столика в ресторан “Белый”</h2>
+            		<span class="gree">Москва, ул. Арбат, 55/32</span>
+            	</div>
+            	<div class="b-reserve__container margin-three">
+	                <div class="b-reserve__options">
+	                    
+	                    <div class="item">
+
+	                        <label>Дата</label>
+
+	                        <div class="input-holder date">
+	                            <input type="text" data-mask="99.99.2014" value="12.10.2014" id="mail_aut">
+	                            <div style="display: none" class="tooltip-box" id="error-tab">
+	                            	<div class="arow"></div>
+	                            	<p>Введеный e-mail содержит не допостимые <br> символы. Проверьте правильность <br> введенного адреса</p>
+	                            	<div class="close-tooltip">
+	                            		<a href="javascript:void(0);">Закрыть</a>
+	                            	</div>
+	                            </div>
+	                        </div>
+	                        
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Время</label>
+
+	                        <div class="input-holder time">
+	                            <input type="text" value="19:30" data-mask="99:99">
+	                        </div>
+
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Гости</label>
+
+	                        <div class="input-holder guests">
+	                            <input type="text" value="2" maxlength="3">
+	                        </div>
+
+	                    </div>
+	                    
+	                </div>
+
+	                <div class="b-reserve__checklist">
+
+	                    <label class="title hidden-xs hidden-xs">Пожелания</label>
+
+	                    <div class="item">
+	                        <label for="checke1"><input type="checkbox" id="checke1" name="checke1"><span>У окна</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke2"><input type="checkbox" id="checke2" name="checke2"><span>Тихий</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke3"><input type="checkbox" id="checke3" name="checke3"><span>VIP</span></label>
+	                    </div>
+
+	                </div>
+	            </div>
+	            <div class="b-modal__form">
+	            	<div class="text-a bg-text-block">
+	            		<h4>Общая сумма заказа: 4500 руб.</h4>
+			            <div class="textarea">
+			            	<textarea placeholder="Пожелания в свободной форме"></textarea>
+			            </div>
+		            </div>
+	            </div>
+	            <div class="title-step show-xs">Осталось всего два шага</div>
+	            <div class="step-box">
+	            	
+	            	<div class="step">
+	            		<span class="oval">1</span>
+	            		<strong class="hidden-xs hidden-sm">Параметры бронирования</strong>
+	            	</div>
+	            	<div class="step">
+	            		<span class="oval">2</span>
+	            		<strong class="hidden-xs hidden-sm">Выбор меню</strong>
+	            	</div>
+	            	<div class="step active">
+	            		<span class="oval">3</span>
+	            		<strong class="hidden-xs hidden-sm">Подтверждение и оплата</strong>
+	            	</div>
+	            </div>
+	            <div class="form__field submit">
+                    <a class="btn-submit sub-reg-1">Подтвердить и перейти к оплате</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+		<div class="b-modal registr b-modal--big">
+			<a class="b-modal__close"></a>
+            <div class="b-modal__wrapper b-modal__form">
+            	<div class="title-form">
+            		<h2>Резерв столика в ресторан “Белый”</h2>
+            		<span class="gree">Москва, ул. Арбат, 55/32</span>
+            	</div>
+	            <div class="b-modal__form">
+	            	<div class="thanks">
+	            		<h3>Ваш заказ №435 принят</h3>
+	            		<p>Ожидайте подтверждение через смс.</p>
+	            		<p>После потверждения брони, вы сможете оплатить заказ в</p>
+	            		<p>личном кабинете.</p>
+	            	</div>
+	            </div>
+	            <div class="buttom-text">
+	            	<span>Дата: 12.10.2015</span>
+	            	<span>Время: 11:00</span>
+	            	<span>Гости: 2</span>
+	            	<span>У окна</span>
+	            </div>
+            </div>
+        </div>
+        
+        
+        
+		<div class="b-modal registr b-modal--big">
+			<a class="b-modal__close"></a>
+            <div class="b-modal__wrapper b-modal__form">
+            	<div class="title-form">
+            		<h2>Резерв столика в ресторан “Белый”</h2>
+            		<span class="gree">Москва, ул. Арбат, 55/32</span>
+            	</div>
+            	<div class="b-reserve__container margin-three">
+	                <div class="b-reserve__options">
+	                    
+	                    <div class="item">
+
+	                        <label>Дата</label>
+
+	                        <div class="input-holder date">
+	                            <input type="text" data-mask="99.99.2014" value="12.10.2014" id="mail_aut">
+	                            <div style="display: none" class="tooltip-box" id="error-tab">
+	                            	<div class="arow"></div>
+	                            	<p>Введеный e-mail содержит не допостимые <br> символы. Проверьте правильность <br> введенного адреса</p>
+	                            	<div class="close-tooltip">
+	                            		<a href="javascript:void(0);">Закрыть</a>
+	                            	</div>
+	                            </div>
+	                        </div>
+	                        
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Время</label>
+
+	                        <div class="input-holder time">
+	                            <input type="text" value="19:30" data-mask="99:99">
+	                        </div>
+
+	                    </div>
+
+	                    <div class="item">
+
+	                        <label>Гости</label>
+
+	                        <div class="input-holder guests">
+	                            <input type="text" value="2" maxlength="3">
+	                        </div>
+
+	                    </div>
+	                    
+	                </div>
+
+	                <div class="b-reserve__checklist">
+
+	                    <label class="title hidden-xs hidden-xs">Пожелания</label>
+
+	                    <div class="item">
+	                        <label for="checke1"><input type="checkbox" id="checke1" name="checke1"><span>У окна</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke2"><input type="checkbox" id="checke2" name="checke2"><span>Тихий</span></label>
+	                    </div>
+
+	                    <div class="item">
+	                        <label for="checke3"><input type="checkbox" id="checke3" name="checke3"><span>VIP</span></label>
+	                    </div>
+
+	                </div>
+	            </div>
+	            <div class="b-modal__form">
+	            	<div class="text-a">
+			            <div class="textarea">
+			            	<textarea placeholder="Пожелания в свободной форме"></textarea>
+			            </div>
+		            </div>
+	            </div>
+	            <div class="title-step show-xs">Осталось всего два шага</div>
+	            <div class="step-box">
+	            	
+	            	<div class="step active">
+	            		<span class="oval">1</span>
+	            		<strong class="hidden-xs hidden-sm">Параметры бронирования</strong>
+	            	</div>
+	            	<div class="step">
+	            		<span class="oval">2</span>
+	            		<strong class="hidden-xs hidden-sm">Выбор меню</strong>
+	            	</div>
+	            	<div class="step">
+	            		<span class="oval">3</span>
+	            		<strong class="hidden-xs hidden-sm">Подтверждение и оплата</strong>
+	            	</div>
+	            </div>
+	            <div class="form__field submit">
+                    <a class="btn-submit sub-reg-1">ПРОДОЛЖИТЬ</a>
+                </div>
+            </div>
+        </div>
+        
+        
+		<div class="b-modal registr b-modal--big">
+			<div class="tab-blocks">
+	    		<ul class="tabs">
+	    			<li class="t1 tab-current"><a href="#">Клиент</a></li>
+	    			<li class="t2"><a href="#">Владелец заведения</a></li>
+	    		</ul>
+	    		<a class="b-modal__close"></a>
+	    	</div>
+            <div class="b-modal__wrapper">
+            	<div class="tab-box t1">
+            		<div class="b-modal__header top-head-login">
+	                    <h1 class="title-box">Регистрация</h1>
+	                </div>
+            		<div class="b-modal__form">
+	            		<div class="form__cols">
+	                        <div class="form__col br-sold">
+								<div class="padding-input-desk">
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ЛОГИН <span>(E-mail)</span></label>
+			                                <input type="text" placeholder="example@mail.ru"  id="mail_aut_1"/>
+			                                <div id="error-tab-1" class="tooltip-box" style="display: none">
+			                                	<div class="arow"></div>
+			                                	<p>Введеный e-mail содержит не допостимые <br/> символы. Проверьте правильность <br/> введенного адреса</p>
+			                                	<div class="close-tooltip">
+			                                		<a href="javascript:void(0);">Закрыть</a>
+			                                	</div>
+			                                </div>
+		                                </div>
+		                            </div>
+
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ПАРОЛЬ</label>
+			                                <div class="password-block">
+			                                	<input id="pass-registr" type="password"/>
+			                                	<a href="#" class="see" id="see-registr"><i class="icon-eye-close"></i></a>
+			                                	<a href="#" class="link-gen">сгенерить пароль</a>
+			                                </div>
+		                                </div>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ФАМИЛИЯ ИМЯ</label>
+			                                <div class="password-block">
+			                                	<input type="text" placeholder="Пушкин Александр" />
+			                                </div>
+		                                </div>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ТЕЛЕФОН</label>
+			                                <div class="password-block">
+			                                	<input class="phone" type="text" placeholder="+7 ( ___ ) ___  __  __" value="+7 ( ___ ) ___  __  __" />
+			                                </div>
+			                                <span class="small">Телефон необходим для подтверждения бронирования</span>
+		                                </div>
+		                            </div>
+			                    </div>
+	                        </div>
+
+	                        <div class="form__col">
+								<div class="padd">
+		                            <div class="form__field input-text">
+		                            	<a href="#" class="soc vk"><span>Войти через Вконтакте</span></a>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<a href="#" class="soc fb"><span>Войти через Facebook</span></a>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<a href="#" class="soc tw"><span>Войти через Twitter</span></a>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<a href="#" class="soc google"><span>Войти через Google+</span></a>
+		                            </div>
+									<div class="form__field input-text">
+		                            	<div class="height-reg-check checkbox">
+					                        <label class="check small-text" for="check2">
+					                            <input type="checkbox" name="check2" id="check2">
+					                            <span>Я согласен с <a href="#">условиями оферты</a></span>
+					                        </label>
+					                    </div>
+		                            </div>
+									<div class="form__field input-text">
+		                            	<div class="height-reg-check checkbox">
+					                        <label class="check small-text" for="check3">
+					                            <input type="checkbox" name="check3" id="check3">
+					                            <span>Я согласен получать рассылку</span>
+					                        </label>
+					                    </div>
+		                            </div>
+			                    </div>
+	                        </div>
+
+	                    </div><!-- /.form__cols -->
+	            	</div>
+	            	<div class="b-modal__form">
+	            		<div class="form__cols">
+	            			<div class="form__col hidden-xs">
+	            				<div class="buttom-url url-regstr">
+			                    	<a href="#">Авторизоваться   </a>   |   <a href="#">Восстановить пароль</a>
+			                    </div>
+	            			</div>
+	            			<div class="form__col">
+		            			<div class="form__field submit sub-regstr">
+		            				<a class="btn-submit" id="sub-reg">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+		            			</div>
+		            			<div class="buttom-url url-regstr show-xs">
+			                    	<a href="#">Авторизоваться   </a>   |   <a href="#">Восстановить пароль</a>
+			                    </div>
+	            			</div>
+	            		</div>
+	            	</div>	
+            	</div>
+            	<div class="tab-box t2">
+            		<div class="b-modal__header top-head-reg">
+	                    <h1 class="title-box">Регистрация</h1>
+	                </div>
+            		<div class="b-modal__form">
+	            		<div class="form__cols">
+	                        <div class="form__col br-sold-t2">
+								<div class="padding-desk">
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ЛОГИН <span>(E-mail)</span></label>
+			                                <input type="text" placeholder="example@mail.ru"  id="mail_aut_2"/>
+			                                <div id="error-tab-2" class="tooltip-box" style="display: none">
+			                                	<div class="arow"></div>
+			                                	<p>Введеный e-mail содержит не допостимые <br/> символы. Проверьте правильность <br/> введенного адреса</p>
+			                                	<div class="close-tooltip">
+			                                		<a href="javascript:void(0);">Закрыть</a>
+			                                	</div>
+			                                </div>
+		                                </div>
+		                            </div>
+
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ПАРОЛЬ</label>
+			                                <div class="password-block">
+			                                	<input id="pass-registr" type="password"/>
+			                                	<a href="#" class="see" id="see-registr"><i class="icon-eye-close"></i></a>
+			                                	<a href="#" class="link-gen">сгенерить пароль</a>
+			                                </div>
+		                                </div>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ФАМИЛИЯ ИМЯ</label>
+			                                <div class="password-block">
+			                                	<input type="text" placeholder="Пушкин Александр" />
+			                                </div>
+		                                </div>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">ТЕЛЕФОН</label>
+			                                <div class="password-block">
+			                                	<input  class="phone" type="text" placeholder="+7 ( ___ ) ___  __  __" />
+			                                </div>
+		                                </div>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<div class="item">
+			                                <label class="gree">НАИМЕНОВАНИЕ ЗАВЕДЕНИЯ</label>
+			                                <div class="password-block">
+			                                	<input type="text" placeholder="Голубая устрица" />
+			                                </div>
+		                                </div>
+		                            </div>
+			                    </div>
+	                        </div>
+
+	                        <div class="form__col">
+								<div class="padd-text">
+		                            <div class="form__field input-text">
+		                            	<p>По завершению регистрации, вы сможете начать оформление страницы заведения в личном кабинете.</p>
+		                            </div>
+		                            <div class="form__field input-text">
+		                            	<p>Согласие получать рассылку, позволит вам всегда быть в курсе последних новостей. В том случае, если информация покажется вам не интересной, вы легко сможете отписаться от неё.</p>
+		                            </div>
+									<div class="padding-block">
+										<div class="form__field input-text">
+			                            	<div class="height-check t2-h checkbox">
+						                        <label class="check small-text" for="check4">
+						                            <input type="checkbox" name="check4" id="check4">
+						                            <span>Я согласен с <a href="#">условиями оферты</a></span>
+						                        </label>
+						                    </div>
+			                            	<div class="height-check checkbox">
+						                        <label class="check small-text" for="check5">
+						                            <input type="checkbox" name="check5" id="check5">
+						                            <span>Я согласен получать рассылку</span>
+						                        </label>
+						                    </div>
+										</div>
+									</div>
+		                            <div class="form__field submit sub-regstr">
+			            				<a id="sub-reg-2" class="btn-submit">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+			            			</div>
+			            			<div class="buttom-url url-regstr">
+				                    	<a href="#">Авторизоваться   </a>   |   <a href="#">Восстановить пароль</a>
+				                    </div>
+			                    </div>
+	                        </div>
+
+	                    </div><!-- /.form__cols -->
+	            	</div>
+            	</div>
+            </div>
+        </div>
+            
+            
+            
+        <div class="b-modal bg-color b-modal--big">
+            <div class="b-modal__wrapper">
+
+                <div class="b-modal__header top-head-login">
+                    <h1 class="title-box">Авторизация</h1>
+                </div>
+
+                <div class="b-modal__form">
+
+                    <div class="form__cols">
+
+                        <div class="form__col border-col">
+							<div class="padding-input-desk">
+	                            <div class="form__field input-text">
+	                            	<div class="item">
+		                                <label class="gree">ЛОГИН <span>(E-mail)</span></label>
+		                                <input type="text" placeholder="example@mail.ru"  id="mail_aut"/>
+		                                <div id="error-tab" class="tooltip-box" style="display: none">
+		                                	<div class="arow"></div>
+		                                	<p>Введеный e-mail содержит не допостимые <br/> символы. Проверьте правильность <br/> введенного адреса</p>
+		                                	<div class="close-tooltip">
+		                                		<a href="javascript:void(0);">Закрыть</a>
+		                                	</div>
+		                                </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="form__field input-text">
+	                            	<div class="item">
+		                                <label class="gree">ПАРОЛЬ</label>
+		                                <div class="password-block">
+		                                	<input id="pass" type="password"/>
+		                                	<a href="#" class="see" id="see"><i class="icon-eye-close"></i></a>
+		                                </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="form__field input-text">
+	                            	<div class="form__field height-check checkbox">
+				                        <label class="check" for="check6">
+				                            <input type="checkbox" name="check6" id="check6">
+				                            <span>Запомнить меня</span>
+				                        </label>
+				                    </div>
+	                            </div>
+								<div class="form__field submit show-xs">
+			                        <a class="btn-submit sub-reg-1">АВТОРИЗОВАТЬСЯ</a>
+			                    </div>
+			                    <div class="buttom-url show-xs">
+			                    	<a href="#">Зарегистрироваться</a>   |   <a href="#">Восстановить пароль</a>
+			                    </div>
+		                    </div>
+                        </div>
+
+                        <div class="form__col">
+							<div class="padd">
+	                            <div class="form__field input-text">
+	                            	<a href="#" class="soc vk"><span>Войти через Вконтакте</span></a>
+	                            </div>
+	                            <div class="form__field input-text">
+	                            	<a href="#" class="soc fb"><span>Войти через Facebook</span></a>
+	                            </div>
+	                            <div class="form__field input-text">
+	                            	<a href="#" class="soc tw"><span>Войти через Twitter</span></a>
+	                            </div>
+	                            <div class="form__field input-text">
+	                            	<a href="#" class="soc google"><span>Войти через Google+</span></a>
+	                            </div>
+								
+		                    </div>
+                        </div>
+
+                    </div><!-- /.form__cols -->
+               		<div class="center">
+               			<div class="form__field submit hidden-xs">
+	                        <a class="btn-submit sub-reg-1">АВТОРИЗОВАТЬСЯ</a>
+	                    </div>
+	                    <div class="buttom-url hidden-xs">
+	                    	<a href="#">Зарегистрироваться</a>   |   <a href="#">Восстановить пароль</a>
+	                    </div>
+               		</div>
+                </div><!-- /.b-modal__form -->
+
+            </div>
+
+            <!-- /.b-modal__wrapper -->
+            <a class="b-modal__close"></a>
+        </div><!-- /.b-modal -->
+
+
+
+
+
+        <div class="b-modal">
+            <div class="b-modal__wrapper">
+
+                <div class="b-modal__header">
+                    <h2 class="b-modal__title">
+                        Восстановление пароля
+                    </h2>
+                </div>
+
+                <div class="b-modal__form">
+
+                    <div class="form__field input-text">
+                        <label>E-mail</label>
+                        <input type="text"/>
+                    </div>
+
+                    <div class="form__field submit">
+                        <a class="btn-submit">Напомнить пароль</a>
+                    </div>
+
+                </div><!-- /.b-modal__form -->
+
+            </div><!-- /.b-modal__wrapper -->
+            <a class="b-modal__close"></a>
+        </div><!-- /.b-modal -->
+
+        <div class="b-modal b-modal--message">
+            <div class="b-modal__wrapper">
+
+                <h2 class="b-modal__title">
+                    Ваш пароль отправлен
+                </h2>
+
+                <p class="b-modal__text">
+                    Проверьте указанную почту: example@exmaple.com
+                </p>
+
+            </div><!-- /.b-modal__wrapper -->
+            <a class="b-modal__close"></a>
+        </div><!-- /.b-modal -->
+
+
+
+
+
+
+
+        <div class="b-modal b-modal--rates">
+            <div class="b-modal__wrapper">
+
+                <div class="b-modal__header">
+                    <h2 class="b-modal__title">
+                        Оцените заведение
+                    </h2>
+                </div>
+
+                <div class="b-modal__content">
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Качество обслуживания</h3>
+                        <div class="select-rate" data-select-rate="0"></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Кухня</h3>
+                        <div class="select-rate" data-select-rate="1"></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Интерьер</h3>
+                        <div class="select-rate" data-select-rate="3"></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Музыкальное сопровождение</h3>
+                        <div class="select-rate" data-select-rate="2"></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Цены</h3>
+                        <div class="select-rate" data-select-rate="5"></div>
+                    </div>
+
+                </div>
+
+                <div class="b-modal__form">
+
+                    <div class="form__field textarea">
+                        <label>Ваш отзыв</label>
+                        <textarea cols="30" rows="10"></textarea>
+                    </div>
+
+                </div><!-- /.b-modal__form -->
+
+                <div class="b-modal__submit">
+                    <a class="btn-submit">Отправить</a>
+                </div>
+
+            </div><!-- /.b-modal__wrapper -->
+            <a class="b-modal__close"></a>
+        </div><!-- /.b-modal -->
+
+        <div class="b-modal b-modal--rates">
+            <div class="b-modal__wrapper">
+
+                <div class="b-modal__header">
+                    <h2 class="b-modal__title">
+                        Рейтинг заведения
+                    </h2>
+                </div>
+
+                <div class="b-modal__content">
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Качество обслуживания</h3>
+                        <div class="select-rate" data-select-rate="0" data-state="fixed"><div class="rate">4.7</div></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Кухня</h3>
+                        <div class="select-rate" data-select-rate="1" data-state="fixed"><div class="rate">2.7</div></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Интерьер</h3>
+                        <div class="select-rate" data-select-rate="3" data-state="fixed"><div class="rate">2.7</div></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Музыкальное сопровождение</h3>
+                        <div class="select-rate" data-select-rate="2" data-state="fixed"><div class="rate">2.5</div></div>
+                    </div>
+
+                    <div class="b-modal__item">
+                        <h3 class="item__name">Цены</h3>
+                        <div class="select-rate" data-select-rate="5" data-state="fixed"><div class="rate">0.7</div></div>
+                    </div>
+
+                </div>
+
+            </div><!-- /.b-modal__wrapper -->
+            <a class="b-modal__close"></a>
+        </div><!-- /.b-modal -->
+
+
+
+
+
+
+
+
+
+    </div><!-- /.modals-layout -->
+
+</div><!-- /.b-page -->
+
+<div class="b-menu-mobile-overlay" data-menu-mobile-overlay></div>
+
+<div class="b-menu-mobile">
+    <div class="b-menu-mobile__select-city">
+        <select data-select data-theme="theme-mobile">
+            <option value="0">Санкт-Петербург</option>
+            <option value="1">Москва</option>
+            <option value="2">Екатеринбург</option>
+            <option value="3">Новосибирск</option>
+            <option value="4">Краснодар</option>
+        </select>
+    </div>
+    <ul class="i-list">
+        <li class="i-list__item"><a class="i-list__link" href="#">О проекте</a></li>
+        <li class="i-list__item"><a class="i-list__link" href="#">Полезное</a></li>
+    </ul>
+</div>
+
+<footer class="b-footer">
+    <div class="b-footer__container">
+
+        <a class="b-footer__logo"></a>
+
+        <div class="b-footer__menu">
+            <ul class="i-list">
+                <li class="i-list__item"><a class="i-list__link" href="#link">О проекте</a></li>
+                <li class="i-list__item"><a class="i-list__link" href="#link">Полезное</a></li>
+            </ul>
+        </div>
+
+        <div class="b-footer__contacts">
+            <ul class="i-list">
+                <li class="i-list__item"><a class="i-list__link b-footer__support" href="#link">Тех поддержка</a></li>
+                <li class="i-list__item"><a class="i-list__link b-footer__email" href="mailto:support@stolon.ru">support@stolon.ru</a></li>
+            </ul>
+        </div>
+
+    </div><!-- /.b-footer__container -->
+</footer><!-- /.b-footer -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/build/production.min.js"></script>
+<script src="js/jquery.inputmask.js"></script>
+<script type="text/javascript">
+	$('#see, #see-registr').click(function(){
+	  var inputtype = $('#pass,-registr').attr('type');
+	  if (inputtype=='text') {
+	    $('#pass, #pass-registr').attr('type', 'password');
+	  } else {
+	    $('#pass, #pass-registr').attr('type', 'text');
+	  }
+	  return false;
+	});
+	
+	$('.icon-eye-close').click(function () {
+		$(this).toggleClass('icon-eye-open');
+	});
+	
+	
+    $('#sub-reg').click(function(){
+        if($("#mail_aut_1").val() == '' || $("#mail_aut_1").val() == "example@mail.ru"){
+            $('#error-tab-1').show();
+            $('#mail_aut_1').addClass('error');
+
+        }else{
+            $('#error-tab-1').hide();
+            $('#mail_aut_1').removeClass('error');
+        }
+    });
+    $('#sub-reg-2').click(function(){
+        if($("#mail_aut_2").val() == '' || $("#mail_aut_2").val() == "example@mail.ru"){
+            $('#error-tab-2').show();
+            $('#mail_aut_2').addClass('error');
+
+        }else{
+            $('#error-tab-2').hide();
+            $('#mail_aut_2').removeClass('error');
+        }
+    });
+    
+    $('.sub-reg-1').click(function(){
+        if($("#mail_aut").val() == '' || $("#mail_aut").val() == "example@mail.ru"){
+            $('#error-tab').show();
+            $('#mail_aut').addClass('error');
+
+        }else{
+            $('#error-tab').hide();
+            $('#mail_aut').removeClass('error');
+        }
+    });
+    $('.close-tooltip').click(function(){
+    	$('.tooltip-box').hide();
+    });
+    
+	$('ul.tabs li').click(function(){
+	 var thisClass = this.className.slice(0,2);
+	 $('div.t1').hide();
+	 $('div.t2').hide();
+	 $('div.' + thisClass).show();
+	 $('ul.tabs li').removeClass('tab-current');
+	 $(this).addClass('tab-current');
+	 return false;
+	 });
+	 $('li.t1').click();
+	 
+	 $('ul.tabsli li').click(function(){
+	 var thisClass = this.className.slice(0,2);
+	 $('div.b1').hide();
+	 $('div.b2').hide();
+	 $('div.b3').hide();
+	 $('div.' + thisClass).show();
+	 $('ul.tabsli li').removeClass('tab-current');
+	 $(this).addClass('tab-current');
+	 return false;
+	 });
+	 $('li.b1').click();
+</script>
+<script type="text/javascript">
+	$(function(){
+		$(".phone").mask("+7 ( 999 ) 999  99  99");
+	});
+</script>
+</body>
+</html>

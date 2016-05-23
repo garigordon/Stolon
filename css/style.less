@@ -1,0 +1,157 @@
+@import "ui-normalize.css";
+
+@import "jquery-ui.structure.css";
+@import "jquery.mCustomScrollbar.css";
+@import "fotorama.dev.css";
+@import "../fancybox/jquery.fancybox.css";
+
+@import "ui-snippets";
+@import "ui-colorscheme";
+@import "ui-grid";
+@import "ui-type";
+@import "ui-sprites";
+@import "ui-interface";
+
+@import "jquery-ui__theme";
+
+@import "b-header";
+@import "b-footer";
+
+@import "b-slider-index";
+@import "tmp-cabinet";
+@import "b-search";
+@import "tmp-rest-page";
+@import "b-tables";
+@import "b-menu-mobile";
+@import "tmp-news";
+@import "tmp-order-page";
+@import "tmp-archive";
+
+@import "tmp-modals";
+
+
+
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+
+.group
+{
+  &:after
+  {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.no-select
+{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.no-ios
+{
+  -webkit-appearance: none;
+}
+
+.border-box
+{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.hidden
+{
+  display: none;
+}
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+body, html
+{
+  height: 100%;
+}
+
+.b-page
+{
+  width: 100%;
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -65px;
+  padding-bottom: 65px;
+  min-height: 100%;
+  .border-box;
+  background: #efefef;
+  min-width: 1000px;
+  //width: 320px;
+  //width: 1200px;
+  a
+  {
+    text-decoration: none;
+  }
+
+  img
+  {
+    vertical-align: top;
+  }
+
+}
+
+.b-page--index
+{
+  padding-bottom: 65px + 500px;
+}
+
+.b-list-index
+{
+  list-style: none;
+  .i-container;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .ff-proxima-reg;
+  font-size: 14px;
+  line-height: 20px;
+  a
+  {
+    color: #333333;
+  }
+}
+
+@media (max-width: 1000px)
+{
+  .adaptive
+  {
+    .b-page
+    {
+      margin-bottom: -149px;
+      padding-bottom: 149px;
+      min-width: 320px;
+    }
+    .b-page--index
+    {
+      padding-bottom: 149px;
+    }
+  }
+}
+
+@media (max-width: 480px)
+{
+  .adaptive
+  {
+    .b-page--index
+    {
+      padding-bottom: 520px;
+    }
+  }
+}

@@ -1,0 +1,426 @@
+.b-tables-halls
+{
+  .i-wrapper;
+  background: #202431;
+
+  &__container
+  {
+    .i-container;
+  }
+
+  .i-list
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+
+    &__item
+    {
+      display: inline-block;
+    }
+    &__link
+    {
+      display: block;
+      font-size: 10px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #ffffff;
+      letter-spacing: 1px;
+      width: 118px;
+      text-align: center;
+    }
+  }
+
+  .active
+  {
+    .i-list__link
+    {
+      background: #2c303c;
+    }
+  }
+
+}
+
+@scrollWidth: 10px;
+
+.b-tables
+{
+  &__content
+  {
+    .i-container;
+    padding: 23px 0 0 0;
+    font-size: 0;
+  }
+
+  .mCSB_scrollTools
+  {
+    width: @scrollWidth;
+    right: 0;
+  }
+
+  .mCSB_scrollTools .mCSB_draggerRail
+  {
+    width: 100%;
+    background: #efefef;
+    .border-radius(@scrollWidth / 2);
+  }
+
+  .mCSB_scrollTools .mCSB_dragger
+  {
+    background: #c4c4c4;
+    .border-radius(@scrollWidth / 2);
+  }
+
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  {
+    display: none;
+  }
+
+  .mCSB_inside>.mCSB_container
+  {
+    margin-right: 0;
+  }
+
+}
+
+.b-tables-layout
+{
+  width: 730px;
+  max-height: 446px;
+  display: inline-block;
+  vertical-align: top;
+
+  &__item
+  {
+    display: inline-block;
+    vertical-align: top;
+    width: 164px;
+    margin: 0 17px 17px 0;
+    background: #ffffff;
+
+    .ff-proxima-reg;
+    font-size: 14px;
+    line-height: 28px;
+    color: #999999;
+    text-align: center;
+    .box-shadow-inset(1px,0,1px,0.12);
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
+
+    div
+    {
+      border-top: 1px solid #e0e0e0;
+      &:first-child
+      {
+        border-top: none;
+        .border-radius-custom(4px,4px,0,0);
+      }
+      &:last-child
+      {
+        border-top: none;
+        .border-radius-custom(0,0,4px,4px);
+      }
+    }
+
+    .name
+    {
+      color: #202431;
+    }
+
+    .hall
+    {
+      background: #efefef;
+    }
+
+    .state
+    {
+      color: #ffffff;
+      background: #8ed98e;
+      &.state-free
+      {
+        background: #8ed98e;
+      }
+      &.state-busy
+      {
+        background: #ffd042;
+      }
+    }
+
+  }
+}
+
+.b-tables-order
+{
+  display: inline-block;
+  vertical-align: top;
+  width: 232px;
+  margin: 0 0 0 18px;
+  background: #ffffff;
+  .border-radius(4px);
+  .border-box;
+  padding: 0px 2px 1px;
+
+  &__title
+  {
+    .ff-proxima-semibold;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding: 17px 0 8px 18px;
+  }
+
+  &__layout
+  {
+    margin: 0 8px 25px 17px;
+    max-height: 327px;
+  }
+
+  &__item
+  {
+    width: 186px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    padding: 11px 0 14px 0;
+    .border-box;
+    min-height: 59px;
+
+    &:first-child
+    {
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .name
+    {
+      font-size: 14px;
+      line-height: 17px;
+      .ff-proxima-semibold;
+      color: #333333;
+      width: 140px;
+    }
+
+    .price
+    {
+      .ff-proxima-semibold;
+      font-size: 14px;
+      line-height: 1;
+      color: #000000;
+      position: absolute;
+      right: 1px;
+      top: 32px;
+    }
+
+    .val
+    {
+      .ff-proxima-reg;
+      font-size: 12px;
+      line-height: 1;
+      color: #999999;
+      position: absolute;
+      right: 4px;
+      top: 5px;
+    }
+
+  }
+
+  &__footer
+  {
+    position: relative;
+    width: 227px;
+    .border-radius-custom(2px,2px,4px,4px);
+    background: #f4f4f4;
+    padding: 12px 0 10px;
+    &:before
+    {
+      content: "";
+      .sprite(@icon-table-summary);
+      position: absolute;
+      left: 1px;
+      top: -7px;
+    }
+
+    .total
+    {
+      display: inline-block;
+      font-size: 10px;
+      line-height: 27px;
+      color: #999999;
+      .ff-proxima-semibold;
+      text-transform: uppercase;
+      vertical-align: middle;
+      margin: 0 0 0 18px;
+      span
+      {
+        position: relative;
+        top: -1px;
+      }
+      strong
+      {
+        font-size: 14px;
+        color: #000000;
+        text-transform: none;
+        font-weight: normal;
+        margin: 0 0 0 5px;
+      }
+    }
+
+    .state
+    {
+      display: inline-block;
+      vertical-align: middle;
+      background: #66cc66;
+      width: 75px;
+      font-size: 10px;
+      line-height: 1;
+      text-align: center;
+      color: #ffffff;
+      .ff-proxima-semibold;
+      text-transform: uppercase;
+      padding: 5px 0;
+      .border-radius(4px);
+      margin: 0 0 0 14px;
+      position: relative;
+      top: -1px;
+      &.state-waiting
+      {
+        background: #ffd042;
+      }
+    }
+
+  }
+
+}
+
+.b-tables-list
+{
+  margin: 14px 0 0 0;
+  padding: 0 0 73px 0;
+  table
+  {
+    width: 100%;
+  }
+  th,td
+  {
+    border: 1px solid #d6dce0;
+    vertical-align: middle;
+  }
+  th
+  {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #999999;
+    background: #e3e7ea;
+    .ff-proxima-semibold;
+    height: 36px;
+  }
+  td
+  {
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    background: #ffffff;
+    height: 45px;
+    .ff-proxima-reg;
+    &.date,
+    &.time
+    {
+      color: #333333;
+      .ff-proxima-semibold;
+      text-align: center;
+    }
+  }
+  .date
+  {
+    width: 103px;
+  }
+  .time
+  {
+    width: 74px;
+  }
+  .client
+  {
+    width: 259px - 23px;
+    padding: 0 0 0 23px;
+    text-align: left;
+    span
+    {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 200px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img
+    {
+      width: 30px;
+      height: 30px;
+      .border-radius(50%);
+      vertical-align: middle;
+      margin: 0 2px 0 0;
+    }
+  }
+  .guests
+  {
+    width: 60px;
+    text-align: center;
+  }
+  .wishes
+  {
+    width: 109px;
+    text-align: center;
+  }
+  .phone
+  {
+    width: 149px - 23px;
+    padding: 0 0 0 23px;
+    text-align: left;
+  }
+  .state
+  {
+    width: 132px - 22px;
+    padding: 0 0 0 22px;
+    text-align: left;
+  }
+  .select-holder
+  {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    &:before
+    {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: 21px;
+      top: 50%;
+      margin: -2px 0 0 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid #333333;
+      z-index: 1;
+    }
+  }
+  .table
+  {
+    select
+    {
+      position: relative;
+      z-index: 10;
+      .no-ios;
+      border: none;
+      background: none;
+      width: 120%;
+      outline: none;
+      height: 100%;
+      cursor: pointer;
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+}

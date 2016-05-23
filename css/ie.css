@@ -1,0 +1,6 @@
+.btn-load-more::before{
+	left: 8px !important;
+	top: -7px !important;
+	line-height: 44px !important;
+    position: absolute !important;
+}

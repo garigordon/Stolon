@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1000" >
+    <title>Template</title>
+
+    <link rel="stylesheet" href="css/master.min.css">
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/fallback/html5shiv.js"></script>
+    <script src="js/fallback/respond.min.js"></script>
+    <script src="js/fallback/es5-shim.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="b-page">
+
+    <header class="b-header">
+        <div class="b-header__container">
+
+            <a class="b-header__logo"></a>
+
+            <div class="b-header__rest-nav">
+
+                <ul class="i-list">
+                    <li class="i-list__item">
+                        <a class="i-list__link" href="#">
+                            Бронирование столиков <span class="notification">5</span>
+                        </a>
+                    </li>
+                    <li class="i-list__item active">
+                        <a class="i-list__link" href="#">
+                            Меню
+                        </a>
+                    </li>
+                    <li class="i-list__item">
+                        <a class="i-list__link" href="#">
+                            Статистика
+                        </a>
+                    </li>
+                    <li class="i-list__item">
+                        <a class="i-list__link" href="#">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="i-list__item">
+                        <a class="i-list__link" href="#">
+                            Профиль ресторана
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="b-header__clocks" data-clocks>
+                12 октября 19<span class="dots">:</span>30
+            </div>
+
+        </div><!-- /.b-header__container -->
+    </header><!-- /.b-header -->
+
+    <div class="b-cabinet">
+
+        <h1 class="b-cabinet__title">
+
+        </h1>
+
+        <div class="b-cabinet__nav">
+
+            <ul class="i-list">
+                <li class="i-list__item active"><a class="i-list__link" href="#link">Профиль заведения</a></li>
+                <li class="i-list__item"><a class="i-list__link" href="#link">Профиль администратора</a></li>
+            </ul>
+
+        </div>
+
+        <form class="b-cabinet__content">
+
+            <form class="b-rest-profile" action="#">
+
+                <div class="b-rest-profile__header">
+
+                    <div class="b-profile-tmb b-profile-tmb--rest">
+
+                        <div class="b-profile-tmb__img">
+
+                        </div><!-- /.b-user-tmb__img-layout -->
+
+                        <div class="b-profile-tmb__upload">
+                            <input type="file" />
+                            <a class="b-profile-tmb__btn">Загрузить аватарку</a>
+                        </div>
+
+                    </div><!-- /.b-user-tmb -->
+
+                    <div class="b-profile-video">
+
+                        <div class="form-field">
+                            <label>Видео приглашение</label>
+                            <div class="input-holder state-linked">
+                                <input type="text" value="http://www.youtube.com/watch?v=oriSHsk9NSU"/>
+                            </div>
+                        </div>
+
+                        <a href="http://www.youtube.com/watch?v=oriSHsk9NSU" target="_blank" class="video-preview"><img src="img/tmp/video-preview.png" alt=""/></a>
+
+                    </div><!-- /.b-profile-video -->
+
+                </div><!-- /.b-rest-profile__header -->
+
+                <div class="b-rest-profile__main">
+
+                    <div class="i-form-col">
+
+                        <div class="i-form-field">
+                            <label>Название заведения</label>
+                            <input type="text"/>
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+                            <label>Тип заведения</label>
+                            <div class="select-holder">
+                                <select  data-select data-theme="theme-default">
+                                    <option value="0">Ресторан</option>
+                                    <option value="1">Бар</option>
+                                    <option value="2">Беляшная</option>
+                                </select>
+                            </div>
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+                            <label>Город</label>
+                            <div class="select-holder">
+                                <select  data-select data-theme="theme-default">
+                                    <option value="0">Москва</option>
+                                    <option value="1">Санкт-Петербург</option>
+                                    <option value="2">Новосибирск</option>
+                                </select>
+                            </div>
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+                            <label>Адрес заведения</label>
+                            <input type="text"/>
+                            <div class="map" id="adress">
+
+
+
+                            </div>
+                        </div><!-- /.i-form-field -->
+
+                        <script>
+
+                            ymaps.ready(function () {
+                                var myMap = new ymaps.Map('adress', {
+                                            center: [55.751574, 37.573856],
+                                            zoom: 9,
+                                            controls: []
+                                        }),
+                                        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+
+                                        }, {
+                                            iconLayout: 'default#image',
+                                            iconImageHref: 'img/single/map-icon-normal.png',
+                                            iconImageSize: [24, 40],
+                                            iconImageOffset: [-12, -40]
+                                        });
+
+                                myMap.geoObjects.add(myPlacemark);
+
+                                myMap.behaviors.disable(['drag', 'rightMouseButtonMagnifier', 'scrollZoom']);
+                            });
+
+                        </script>
+
+                        <div class="i-form-field">
+                            <label>Телефон заведения</label>
+                            <input type="text" data-mask-phone />
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+                            <label>Сайт заведения</label>
+                            <input type="text" />
+                        </div><!-- /.i-form-field -->
+
+                    </div><!-- /.i-form-col -->
+
+                    <div class="i-form-col">
+
+                        <div class="i-form-field">
+                            <label>Тип кухни</label>
+                            <div class="select-holder">
+                                <select  data-select data-theme="theme-default">
+                                    <option value="0">Европейская</option>
+                                    <option value="1">Корейская</option>
+                                    <option value="2">Шашлык-машлык</option>
+                                </select>
+                            </div>
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+                            <label>Средний чек</label>
+                            <div class="select-holder">
+                                <select  data-select data-theme="theme-default">
+                                    <option value="0">500 р.</option>
+                                    <option value="1">1 000 р.</option>
+                                    <option value="2">5 000 р.</option>
+                                </select>
+                            </div>
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+                            <label>Время работы в будни</label>
+                            <div class="time-span">
+
+                                <div class="time-start">
+
+                                    <div class="text">с</div>
+
+                                    <div class="select-holder">
+                                        <select  data-select data-theme="theme-default">
+                                            <option value="0">8:00</option>
+                                            <option value="1">9:00</option>
+                                            <option value="2">10:00</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="time-stop">
+
+                                    <div class="text">до</div>
+
+                                    <div class="select-holder">
+                                        <select  data-select data-theme="theme-default">
+                                            <option value="0">24:00</option>
+                                            <option value="1">23:00</option>
+                                            <option value="2">22:00</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+                            <label>Время работы в выходные</label>
+                            <div class="time-span">
+
+                                <div class="time-start">
+
+                                    <div class="text">с</div>
+
+                                    <div class="select-holder">
+                                        <select  data-select data-theme="theme-default">
+                                            <option value="0">8:00</option>
+                                            <option value="1">9:00</option>
+                                            <option value="2">10:00</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="time-stop">
+
+                                    <div class="text">до</div>
+
+                                    <div class="select-holder">
+                                        <select  data-select data-theme="theme-default">
+                                            <option value="0">24:00</option>
+                                            <option value="1">23:00</option>
+                                            <option value="2">22:00</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+
+                            <div class="radio-group">
+                                <div class="title">wi-fi</div>
+                                <label class="radio-holder" for="option-1">
+                                    <input type="radio" name="radio-1" id="option-1" checked="checked"/>
+                                    <span>Есть</span>
+                                </label>
+                                <label class="radio-holder" for="option-2">
+                                    <input type="radio" name="radio-1" id="option-2"/>
+                                    <span>Нет</span>
+                                </label>
+                            </div>
+
+                        </div><!-- /.i-form-field -->
+
+                        <div class="i-form-field">
+
+                            <div class="radio-group">
+                                <div class="title">живая музыка</div>
+                                <label class="radio-holder" for="option-3">
+                                    <input type="radio" name="radio-2" id="option-3" checked="checked"/>
+                                    <span>Есть</span>
+                                </label>
+                                <label class="radio-holder" for="option-4">
+                                    <input type="radio" name="radio-2" id="option-4"/>
+                                    <span>Нет</span>
+                                </label>
+                            </div>
+
+                        </div><!-- /.i-form-field -->
+
+                    </div><!-- /.i-form-col -->
+
+                </div><!-- /.b-rest-profile__details -->
+
+                <div class="b-rest-profile__footer">
+
+                    <div class="b-rest-photo">
+
+                        <div class="b-rest-photo__title">
+                            Фотографии интерьера
+                        </div>
+
+                        <div class="b-rest-photo__item">
+                            <img src="img/tmp/rest-photo.png" alt=""/>
+                            <a class="btn-delete">Удалить</a>
+                        </div>
+
+                        <div class="b-rest-photo__item">
+
+                            <div class="btn-upload-holder">
+                                <input type="file"/>
+                                <a class="btn-upload">Загрузить</a>
+                            </div>
+                        </div>
+
+                        <div class="b-rest-photo__item">
+
+                            <div class="btn-upload-holder">
+                                <input type="file"/>
+                                <a class="btn-upload">Загрузить</a>
+                            </div>
+                        </div>
+
+                        <div class="b-rest-photo__item">
+
+                            <div class="btn-upload-holder">
+                                <input type="file"/>
+                                <a class="btn-upload">Загрузить</a>
+                            </div>
+                        </div>
+
+                        <div class="b-rest-photo__item">
+
+                            <div class="btn-upload-holder">
+                                <input type="file"/>
+                                <a class="btn-upload">Загрузить</a>
+                            </div>
+                        </div>
+
+                        <div class="b-rest-photo__item">
+
+                            <div class="btn-upload-holder">
+                                <input type="file"/>
+                                <a class="btn-upload">Загрузить</a>
+                            </div>
+                        </div>
+
+                    </div><!-- /.b-rest-photo -->
+
+                    <div class="b-rest-bnrs">
+
+                        <div class="b-rest-bnrs__item">
+                            <label>Загрузить большой баннер</label>
+
+                            <div class="btn-upload-holder" data-upload>
+                                <input type="file" data-input />
+                                <a class="btn-upload" data-file></a>
+                            </div>
+
+                        </div>
+
+                        <div class="b-rest-bnrs__item">
+                            <label>Загрузить маленький баннер</label>
+
+                            <div class="btn-upload-holder" data-upload>
+                                <input type="file" data-input />
+                                <a class="btn-upload" data-file></a>
+                            </div>
+
+                        </div>
+
+                    </div><!-- /.b-rest-bnrs -->
+
+                    <div class="b-rest-profile__submit">
+                        <a class="btn-simple">Сохранить</a>
+                    </div>
+
+                </div><!-- /.b-rest-profile__footer -->
+
+            </form><!-- /.b-rest-profile -->
+
+        </form><!-- /.b-cabinet__content -->
+
+    </div><!-- /.b-cabinet -->
+
+</div><!-- /.b-page -->
+
+<footer class="b-footer">
+    <div class="b-footer__container">
+
+        <a class="b-footer__logo"></a>
+
+        <div class="b-footer__menu">
+            <ul class="i-list">
+                <li class="i-list__item"><a class="i-list__link" href="#link">О проекте</a></li>
+                <li class="i-list__item"><a class="i-list__link" href="#link">Полезное</a></li>
+                <li class="i-list__item"><a class="i-list__link" href="#link">Рестораторам</a></li>
+                <li class="i-list__item"><a class="i-list__link" href="#link">Клиентам</a></li>
+            </ul>
+        </div>
+
+        <div class="b-footer__contacts">
+            <ul class="i-list">
+                <li class="i-list__item"><a class="i-list__link b-footer__support" href="#link">Тех поддержка</a></li>
+                <li class="i-list__item"><a class="i-list__link b-footer__email" href="mailto:support@stolon.ru">support@stolon.ru</a></li>
+            </ul>
+        </div>
+
+    </div><!-- /.b-footer__container -->
+</footer><!-- /.b-footer -->
+
+<script src="js/build/production.min.js"></script>
+
+</body>
+</html>

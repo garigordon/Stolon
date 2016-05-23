@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/master.min.css">
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/fallback/html5shiv.js"></script>
+    <script src="js/fallback/respond.min.js"></script>
+    <script src="js/fallback/es5-shim.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="adaptive">
+
+<div class="b-page">
+
+    <header class="b-header">
+        <div class="b-header__container">
+
+            <a class="b-header__menu-mobile" data-menu-mobile-btn></a>
+
+            <a class="b-header__logo"></a>
+
+            <div class="b-header__select-city">
+                <select data-select data-theme="theme-header">
+                    <option value="0">Санкт-Петербург</option>
+                    <option value="1">Москва</option>
+                    <option value="2">Екатеринбург</option>
+                    <option value="3">Новосибирск</option>
+                    <option value="4">Краснодар</option>
+                </select>
+            </div>
+
+            <div class="b-header__user-nav">
+                <ul class="i-list">
+                    <li class="i-list__item">
+                        <a href="#link" class="i-list__link">
+                            <span class="i-list__link-underline">Заведения</span>
+                        </a>
+                    </li>
+                    <li class="i-list__item">
+                        <a href="#link" class="i-list__link">
+                            <span class="i-list__link-underline">О проекте</span>
+                        </a>
+                    </li>
+                    <li class="i-list__item">
+                        <a href="#link" class="i-list__link">
+                            <span class="i-list__link-underline">Полезное</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="b-header__user-panel">
+
+                <div class="b-header__user-menu-holder">
+                    <a class="b-header__btn b-header__btn--user" data-btn-user>
+                        <div class="user__tmb">
+                            <img src="img/tmp/header-user-avatar.jpg" alt=""/>
+                        </div>
+                        <div class="user__title">
+                            Konstantin_89
+                        </div>
+                    </a>
+                    <ul class="b-header__user-menu i-list">
+                        <li class="i-list__item"><a class="i-list__link" href="#link">Личный кабинет</a></li>
+                        <li class="i-list__item"><a class="i-list__link" href="#link">Выйти</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div><!-- /.b-header__container -->
+    </header><!-- /.b-header -->
+
+    <ul class="b-user-menu-mobile i-list">
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Текущий заказ</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Избранное</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Архив заказов</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Профиль</a>
+        </li>
+        <li class="i-list__item">
+            <a class="i-list__link" href="#">Выйти</a>
+        </li>
+    </ul>
+
+    <div class="b-rest">
+
+        <div class="b-reserve">
+            <div class="b-reserve__container">
+
+                <div class="b-reserve__target">
+                    <div class="basket">
+                    	<h2><a href="#">Ваш заказ на <span>0 <em>р.</em></span></a></h2>
+                    	<p><a href="#">Посмотреть содержание</a></p>
+                    	<div class="basket-window"><span>БЛЮДО ДОБАВЛЕНО</span></div>
+                    </div>
+                </div>
+
+                <div class="b-reserve__options">
+                    
+                    <div class="item">
+
+                        <label>Дата</label>
+
+                        <div class="input-holder date">
+                            <input type="text" data-mask="99.99.2014" value="12.10.2014"/>
+                        </div>
+                        
+                    </div>
+
+                    <div class="item">
+
+                        <label>Время</label>
+
+                        <div class="input-holder time">
+                            <input type="text" data-mask="99:99" value="19:30"/>
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+
+                        <label>Гости</label>
+
+                        <div class="input-holder guests">
+                            <input type="text" maxlength="3" value="2"/>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="b-reserve__checklist">
+
+                    <label class="title">Пожелания</label>
+
+                    <div class="item">
+                        <label for="check1"><input type="checkbox" name="check1" id="check1"/><span>У окна</span></label>
+                    </div>
+
+                    <div class="item">
+                        <label for="check2"><input type="checkbox" name="check2" id="check2"/><span>VIP</span></label>
+                    </div>
+
+                    <div class="item">
+                        <label for="check3"><input type="checkbox" name="checl3" id="check3"/><span>Тихий</span></label>
+                    </div>
+
+                </div>
+
+                <div class="b-reserve__submit">
+                    <a class="btn-submit">Забронировать</a>
+                </div>
+
+            </div><!-- /.b-reserve__container -->
+        </div><!-- /.b-reserve -->
+
+
+        <div class="b-rest__header">
+
+            <h1 class="b-rest__title">
+                Ресторан <strong>Дом Оранжевой Коровы</strong>
+            </h1>
+
+            <a class="b-rest__add-favorites" href="#">Добавить в избранное</a>
+
+        </div>
+
+        <div class="b-rest__content">
+            <div class="b-rest__aside">
+
+                <div class="b-rest-summary">
+
+                    <div class="options">
+
+                        <div class="item">
+                            <div class="title">Тип кухни</div>
+                            <div class="val">
+                                <p>Европейская</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="title">Средний чек</div>
+                            <div class="val">
+                                <p>500 р.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="title">Услуги</div>
+                            <div class="val">
+                                <p class="icon-wifi">WI-FI</p>
+                                <p class="icon-music">Живая музыка</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="title">Время работы</div>
+                            <div class="val">
+                                <p>8:00-23:00 <em>пн-чт</em></p>
+                                <p>12:00-6:00 <em>пт-вс</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="reviews">
+
+                        <div class="total-val">4.7</div>
+
+                        <div class="marks">
+                            <div class="stars-rate stars-4"></div>
+                            <div class="marks-val">12 отзывов</div>
+                        </div>
+
+                    </div>
+
+                    <div class="send-review">
+                        <a class="btn-send-review" href="#">Оставить отзыв</a>
+                    </div>
+
+                    <div class="share">
+                        <div class="title">
+                            Рассказать друзьям о заведении
+                        </div>
+                        <ul class="i-list">
+                            <li class="i-list__item"><a class="i-list__link icon-fb" href="#"></a></li>
+                            <li class="i-list__item"><a class="i-list__link icon-vk" href="#"></a></li>
+                            <li class="i-list__item"><a class="i-list__link icon-tw" href="#"></a></li>
+                        </ul>
+
+                    </div>
+
+                </div><!-- /.b-rest-summary -->
+
+                <a class="b-ad-aside state-empty"></a>
+
+            </div><!-- /.b-rest__aside -->
+
+            <div class="b-rest__main">
+
+                <div class="no-media"></div>
+
+                <a class="b-ad-aside state-empty"></a>
+
+                <div class="b-menu-short">
+                    <div class="b-menu-short__container">
+                        <div class="b-menu-short__header">
+                            <h2>Меню ресторана</h2>
+                            <p>
+                                После подтверждения брони администратором, вы сможете заказать
+                                и оплатить меню в Личном кабинете
+                            </p>
+                            <a class="watch-full" href="#">Смотреть все</a>
+                        </div>
+                        <ul class="b-menu-short__content">
+                            <li class="b-menu-short__item">
+                                <div class="name">
+                                    Гравлакс из лосося с картофелем
+                                </div>
+                                <div class="price">
+                                    720 р.
+                                </div>
+                            </li>
+                            <li class="b-menu-short__item">
+                                <div class="name">
+                                    Английский завтрак с беконом и овощами
+                                </div>
+                                <div class="price">
+                                    3 300 р.
+                                </div>
+                            </li>
+                            <li class="b-menu-short__item">
+                                <div class="name">
+                                    Салат Цезарь с куриной грудкой
+                                </div>
+                                <div class="price">
+                                    720 р.
+                                </div>
+                            </li>
+                            <li class="b-menu-short__item">
+                                <div class="name">
+                                    Английский завтрак с беконом и овощами
+                                </div>
+                                <div class="price">
+                                    300 р.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.b-menu-short -->
+
+                <a class="b-ad-main state-empty"></a>
+                
+            </div><!-- /.b-rest__main -->
+
+        </div><!-- /.b-rest__content -->
+
+        <div class="b-rest__footer">
+            <div class="bubble">
+                <h2>Контакты</h2>
+
+                <h3 class="title">Дом Оранжевой Коровы</h3>
+
+                <a class="address">
+                    <span>Мичуринский пр-т длинное название</span>
+                </a>
+
+                <div class="metro">
+                    Добрынинская, Шаболовская, Тульская
+                </div>
+
+                <div class="i-separator"></div>
+
+                <div class="contacts">
+                    <div class="phone">+7 (495) 461-62-21 </div>
+                    <a class="link" href="http://cowhouse.com" target="_blank">cowhouse.com</a>
+                </div>
+            </div>
+            <div class="map-holder" id="map"></div>
+        </div>
+
+        <script>
+
+            ymaps.ready(function () {
+                var myMap = new ymaps.Map('map', {
+                            center: [55.751574, 37.573856],
+                            zoom: 9,
+                            controls: []
+                        }),
+                        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+
+                        }, {
+                            iconLayout: 'default#image',
+                            iconImageHref: 'img/single/map-icon-normal.png',
+                            iconImageSize: [24, 40],
+                            iconImageOffset: [-12, -40]
+                        });
+
+                myMap.geoObjects.add(myPlacemark);
+
+                myMap.behaviors.disable(['drag', 'rightMouseButtonMagnifier', 'scrollZoom']);
+            });
+
+        </script>
+
+    </div><!-- /.b-rest -->
+
+</div><!-- /.b-page -->
+
+<div class="b-menu-mobile-overlay" data-menu-mobile-overlay></div>
+
+<div class="b-menu-mobile">
+    <div class="b-menu-mobile__select-city">
+        <select data-select data-theme="theme-mobile">
+            <option value="0">Санкт-Петербург</option>
+            <option value="1">Москва</option>
+            <option value="2">Екатеринбург</option>
+            <option value="3">Новосибирск</option>
+            <option value="4">Краснодар</option>
+        </select>
+    </div>
+    <ul class="i-list">
+        <li class="i-list__item"><a class="i-list__link" href="#">Заведения</a></li>
+        <li class="i-list__item"><a class="i-list__link" href="#">О проекте</a></li>
+        <li class="i-list__item"><a class="i-list__link" href="#">Полезное</a></li>
+    </ul>
+</div>
+<footer class="b-footer">
+    <div class="b-footer__container">
+
+        <a class="b-footer__logo"></a>
+
+        <div class="b-footer__menu">
+            <ul class="i-list">
+                <li class="i-list__item"><a class="i-list__link" href="#link">О проекте</a></li>
+                <li class="i-list__item"><a class="i-list__link" href="#link">Полезное</a></li>
+            </ul>
+        </div>
+
+        <div class="b-footer__contacts">
+            <ul class="i-list">
+                <li class="i-list__item"><a class="i-list__link b-footer__email" href="mailto:support@stolon.ru">support@stolon.ru</a></li>
+            </ul>
+        </div>
+
+    </div><!-- /.b-footer__container -->
+</footer><!-- /.b-footer -->
+
+<script src="js/build/production.min.js"></script>
+
+</body>
+</html>
